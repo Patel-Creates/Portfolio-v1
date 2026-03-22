@@ -80,7 +80,7 @@ const Header = () => {
           >
             <Button asChild>
               <a
-                href="/Olivie_Bergeron_resume.pdf"
+                href="/Dharti-Patel-Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium"
