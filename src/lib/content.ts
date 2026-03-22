@@ -14,6 +14,7 @@ export type Education = {
   highlights: string[];
   coursework: string[];
 };
+
 export type Project = {
   title: string;
   description: string;
@@ -45,217 +46,118 @@ export type PersonalInfo = {
 };
 
 const personalInfo: PersonalInfo = {
-  name: "Olivie Bergeron",
-  title: "Full Stack Developer",
-  email: "oliviebergeron@gmail.com",
+  name: "Dharti Patel",
+  title: "Cloud & DevOps Student | Cloud Network Analyst Intern @ PSAC",
+  email: "Dharti236@gmail.com",
   location: "Ottawa, Canada",
-  quote: "I like to fix and build things.",
-  avatar: "/images/avatar.jpg",
+  quote: "Build it. Break it. Fix it. Ship it.",
+  avatar: "/images/avatar.jpg", // drop your photo in /public/images/ and rename it avatar.jpg
   about:
-    "Hi, I'm Olivié Bergeron, aspiring developer. I have a College Diploma in Computer Programming and currently pursuing a Post-Graduate College Diploma in Cloud Computing from Algonquin College. I interned as a full-stack developer at Nortac Defence, working on web and mobile applications. I love learning new technologies and am always eager to collaborate on interesting projects. Outside of coding, I enjoy making specialty candles using 3D design, creating music, and playing/making gaming.",
+    "Hi, I'm Dharti Patel, a Cloud & DevOps student at Algonquin College in Ottawa. I'm passionate about building cloud-native solutions, automating infrastructure, and working with Azure. I'm incoming as a Cloud Network Analyst Intern at PSAC and love working on real-world projects that combine IoT, AI, and cloud technology. Always learning, always building.",
   message:
-    "Feel free to reach out if you're looking for a developer, have a question, or just want to connect.",
+    "Feel free to reach out if you're looking to collaborate, have a question, or just want to connect!",
   socials: {
-    github: "https://github.com/OlivTheOlive", // if no github leave blank
-    linkedin: "https://www.linkedin.com/in/olivié-bergeron/", // if no linkedin leave blank
+    github: "https://github.com/Patel-Creates",
+    linkedin: "https://www.linkedin.com/in/dhartipatel23/",
   },
+
   skills: [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Express",
-    "MongoDB",
-    "PostgreSQL",
-    "Tailwind CSS",
-    "Git",
-    "GitHub",
-    "Docker",
     "Azure",
     "Python",
-    "Java",
-    "RESTful APIs",
-    "GraphQL",
+    "JavaScript",
+    "TypeScript",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "GitHub Actions",
+    "Linux",
+    "Networking",
+    "Next.js",
+    "Node.js",
+    "REST APIs",
+    "Azure IoT Hub",
+    "Azure AI Search",
+    "Azure OpenAI",
+    "Git",
   ],
+
   experiences: [
     {
-      title: "Junior Full Stack Developer",
-      company: "Nortac Defence",
+      title: "Cloud Network Analyst Intern",
+      company: "PSAC – Public Service Alliance of Canada",
       location: "Ottawa, Canada",
-      period: "August 2023 - April 2024",
+      period: "Summer 2026",
       description: [
-        "Led design and implementation of a customizable geofencing feature with multi-color support, delivering enhanced user personalization through React.js, Node.js, and Express.js",
-        "Optimized platform architecture to support multiple live chat windows, increasing simultaneous chat capacity from 1 to 3 using JavaScript socket handling and React.js",
-        "Developed Legal/About page UI components for Android NTAC app using React Native, ensuring open-source compliance and passing all QA assessments",
-        "Development of Windows Tablet application using React.js, Electron.js, and Redux, implementing registration, login, and legal information systems",
-        "Integrated new device registration features using React.js, Node.js, and MySQL, demonstrating rapid response to customer requirements",
+        "Incoming Cloud Network Analyst intern working on cloud infrastructure and networking solutions.",
       ],
     },
   ],
+
   education: [
     {
-      title: "College Diploma in Computer Programming",
-      school: "Algonquin College",
-      location: "Ottawa, Canada",
-      period: "September 2022 - August 2024",
-      highlights: [
-        "Graduated with a GPA of 3.64",
-        "Completed a capstone project using Zoho API, React.js, Node.js, and MongoDB",
-        "Strong performance in core programming courses (A/A- grades in Java OOP, Web Programming, Network Programming)",
-        "Excelled in database and design courses (A+/A grades)",
-        "Completed two cooperative work terms (Fall 2023, Winter 2024)",
-        "Consistently earned A-range grades across most technical courses",
-      ],
-      coursework: ["Programming fundamentals and OOP with design patterns",
-        "Database systems and advanced database topics",
-        "Web and mobile application development",
-        "Operating systems and network programming",
-        "Business and enterprise application programming",
-        "Technical communication and professional development",
-      ],
-    },
-    {
-      title: "Post-Graduate College Certificate in Cloud Computing",
+      title: "Post-Graduate Certificate in Cloud Computing",
       school: "Algonquin College",
       location: "Ottawa, Canada",
       period: "September 2025 - Present",
       highlights: [
-      "Gpa of 3.80",
-      "Strong performance across all courses with consistent A-/A+ grades",
-      "Excelling in cloud-focused technical courses)",
-      "Currently enrolled (Fall 2025 term in progress)",
+        "Currently enrolled in the Cloud Computing program",
+        "Strong performance across cloud-focused technical courses",
+        "Built real-world IoT and cloud pipeline projects using Azure services",
       ],
       coursework: [
         "Cloud computing fundamentals and architecture",
         "Cloud platform implementation and management",
-        "Cloud security and compliance",
         "Cloud networking and virtualization",
+        "Remote and real-time data applications",
+        "Cloud security and compliance",
         "Cloud storage and data management",
         "Cloud application development",
-        "Remote and Real-time data applications",
-        "Professional development and career readiness",
-        "Web Content Accessibility Guidelines (WCAG) 2.2",
-        "Accessibility Testing and Evaluation",
-      
       ],
     },
   ],
+
   projects: [
     {
-      title: "Maple Politics",
+      title: "Rideau Canal Skating Conditions System",
       description:
-        "A news hub for Canadian politics, featuring a real-time dashboard of the latest news and data from the federal election.",
+        "A full real-time IoT data pipeline simulating sensor readings across 3 Rideau Canal skating stations. Built as a 3-part system: a Python sensor simulator, an Azure-based monitoring backend, and a live JavaScript dashboard displaying ice thickness, temperature, and weather conditions.",
       tags: [
-        "TypeScript",
-        "Tailwind CSS",
-        "React.js",
-        "Next.js",
-        "Lucide React",
-        "Next Theme",
-        "Shadcn UI",
-        "Vercel",
-        "Recharts",
-        "Drizzle ORM",
-        "Zod",
-      ],
-      image: "/images/maple.png", // if no image leave blank
-      link: "https://maplepolitics.com/", // if no link leave blank
-    },
-    {
-      title: "Track Your Sub",
-      description:
-        "A simple calculator to help track protein, carbs, and fats from my favorite Canadian sandwiches. Available in English and French!",
-      tags: [
-        "TypeScript",
-        "Tailwind CSS",
-        "React.js",
-        "Next.js",
-        "Lucide React",
-        "Next Theme",
-        "Shadcn UI",
-        "Framer Motion",
-      ],
-      image: "/images/sub.png", // if no image leave blank
-      link: "https://buildyoursandwich.vercel.app/", // if no link leave blank
-    },
-    {
-      title: "Portfolio Template",
-      description:
-        "A Portfolio template built with TypeScript, Tailwind CSS, React.js, Next.js, Lucide React, Next Theme, Shadcn UI, and Framer Motion. Easy to customize and deploy.",
-      tags: [
-        "TypeScript",
-        "Tailwind CSS",
-        "React.js",
-        "Next.js",
-        "Lucide React",
-        "Next Theme",
-        "Shadcn UI",
-        "Framer Motion",
-      ],
-      image: "/images/template.png", // if no image leave blank
-      link: "", // if no link leave blank
-      github: "https://github.com/OlivTheOlive/portfolio-2.0", // if no github leave blank
-    },
-
-    {
-      title: "Zoho Customer Portal Prototype (School Project)",
-      description:
-        "As team lead, I developed a Node.js backend application that integrates with ZOHO API to synchronize project data with MongoDB and serve it through API routes to a React.js frontend prototype, providing a more flexible alternative to Zoho Creator for the client.",
-      tags: [
+        "Python",
         "JavaScript",
-        "Node.js",
-        "MongoDB",
-        "Zoho API",
-        "React.js",
-        "MERN Stack",
-        "Express.js",
-      ],
-      image: "", // if no image leave blank
-      link: "", // if no link leave blank
-      github: "https://github.com/OlivTheOlive/clientZohoNodeApi", // if no github leave blank
-    },
-    {
-      title: "RoadRunner (School Project)",
-      description:
-        "A mobile application built with React Native and Expo that provides real-time route tracking and navigation using various mapping APIs (Google Directions, Mapbox) with a MongoDB/Express.js backend for data management.",
-      tags: [
-        "JavaScript",
-        "React-Native",
-        "Axios",
-        "Geolib",
-        "react-native-maps",
-        "Expo",
-        "expo-location",
-        "Mapbox Polyline",
-        "Express.js",
-        "Jest",
-        "Mongoose",
-        "Nodemon",
-        "Google Direction API",
-      ],
-      image: "", // if no image leave blank
-      link: "", // if no link leave blank
-      github: "https://github.com/OlivTheOlive/RoadRunnerV2", // if no github leave blank
-    },
-    {
-      title: "Remote Data and RT Application Final Project (School Project)",
-      description:
-        "This project is simulates a mainly cloud-native stack that incorporate IoT Hub, Stream Analytics, Blob Storage, CosmoDB and App Services. The goal is to process telemetry data of IoT devices uses to track weather Rideau Canal safety metrics and display them to a web page.",
-      tags: [
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Node.js",
         "Azure IoT Hub",
         "Azure Stream Analytics",
-        "Azure Blob Storage",
         "Azure CosmosDB",
+        "REST API",
+        "Next.js",
+      ],
+      image: "", // add a screenshot in /public/images/ e.g. "/images/rideau.png"
+      link: "", // add your deployed URL here once live
+      github: "https://github.com/Patel-Creates/rideau-canal-dashboard",
+    },
+    {
+      title: "CarClinch Background Removal API",
+      description:
+        "An AI-powered Python REST API that automatically removes and replaces backgrounds in car images. Designed for automotive listings to generate clean, professional product shots without manual editing.",
+      tags: ["Python", "REST API", "AI", "Image Processing"],
+      image: "", // add a screenshot in /public/images/ e.g. "/images/carclinch.png"
+      link: "",
+      github: "https://github.com/Patel-Creates/carclinch-bg-removal-api",
+    },
+    {
+      title: "Azure RAG Chatbot",
+      description:
+        "A Retrieval-Augmented Generation (RAG) chatbot running on Azure, using Azure AI Search and Azure OpenAI to power ChatGPT-style Q&A experiences over custom document sets.",
+      tags: [
+        "Python",
+        "Azure AI Search",
+        "Azure OpenAI",
+        "RAG",
+        "LLM",
         "Azure App Services",
       ],
-      image: "/images/remoteFinal.png", // if no image leave blank
-      link: "https://youtu.be/ENaMSjghwiM", // if no link leave blank
-      github: "https://github.com/OlivBerg/finalRemote", // if no github leave blank
+      image: "", // add a screenshot in /public/images/ e.g. "/images/chatbot.png"
+      link: "",
+      github: "https://github.com/Patel-Creates/azure-search-openai-Chatbot",
     },
   ],
 };
