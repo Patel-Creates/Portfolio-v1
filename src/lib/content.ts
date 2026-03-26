@@ -51,7 +51,7 @@ const personalInfo: PersonalInfo = {
   email: "Dharti236@gmail.com",
   location: "Ottawa, Canada",
   quote: "Build it. Break it. Fix it. Ship it.",
-  avatar: "/images/avatar.jpg", // drop your photo in /public/images/ and rename it avatar.jpg
+  avatar: "/images/avatar.jpg", // rename your LinkedIn photo to avatar.jpg and drop it in /public/images/
   about:
     "Hi, I'm Dharti Patel, a Cloud & DevOps student at Algonquin College in Ottawa. I'm passionate about building cloud-native solutions, automating infrastructure, and working with Azure. I'm incoming as a Cloud Network Analyst Intern at PSAC and love working on real-world projects that combine IoT, AI, and cloud technology. Always learning, always building.",
   message:
@@ -68,6 +68,7 @@ const personalInfo: PersonalInfo = {
     "TypeScript",
     "Docker",
     "Kubernetes",
+    "Terraform",
     "CI/CD",
     "GitHub Actions",
     "Linux",
@@ -83,18 +84,6 @@ const personalInfo: PersonalInfo = {
 
   experiences: [
     {
-  title: "Developer (Co-op)",
-  company: "Canada Revenue Agency",
-  location: "Ottawa, Canada",
-  period: "Sep 2023 – Oct 2024",
-  description: [
-    "Developed and tested Angular-based enterprise web applications and government web forms, including GST/HST rebate forms.",
-    "Supported application deployments across DEV, TEST, pre-production, and production environments following release management procedures.",
-    "Managed development and testing tasks in Jira, tracking defects and coordinating Agile Scrum sprint workflows across cross-functional teams.",
-    "Shadowed the release manager to observe environment promotion, release coordination, and post-release validation activities.",
-  ],
-},
-    {
       title: "Cloud Network Analyst Intern",
       company: "PSAC – Public Service Alliance of Canada",
       location: "Ottawa, Canada",
@@ -103,32 +92,94 @@ const personalInfo: PersonalInfo = {
         "Incoming Cloud Network Analyst intern working on cloud infrastructure and networking solutions.",
       ],
     },
+    {
+      title: "Developer (Co-op)",
+      company: "Canada Revenue Agency",
+      location: "Ottawa, Canada",
+      period: "Sep 2023 – Oct 2024",
+      description: [
+        "Developed and tested Angular-based enterprise web applications and government web forms, including GST/HST rebate forms.",
+        "Supported application deployments across DEV, TEST, pre-production, and production environments following release management and validation procedures.",
+        "Managed development and testing tasks in Jira, tracking defects and coordinating Agile Scrum sprint workflows across cross-functional teams.",
+        "Assisted with application and release documentation including testing notes and feature updates to support team knowledge sharing.",
+        "Shadowed the release manager to observe environment promotion, release coordination, and post-release validation activities.",
+      ],
+    },
   ],
 
   education: [
     {
-      title: "Post-Graduate Certificate in Cloud Computing",
+      title: "Post-Graduate Certificate in Cloud Development & Operations",
       school: "Algonquin College",
       location: "Ottawa, Canada",
-      period: "September 2025 - Present",
+      period: "September 2025 – Present",
       highlights: [
-        "Currently enrolled in the Cloud Computing program",
+        "GPA: 3.75 / 4.00",
         "Strong performance across cloud-focused technical courses",
         "Built real-world IoT and cloud pipeline projects using Azure services",
       ],
       coursework: [
-        "Cloud computing fundamentals and architecture",
-        "Cloud platform implementation and management",
-        "Cloud networking and virtualization",
-        "Remote and real-time data applications",
-        "Cloud security and compliance",
-        "Cloud storage and data management",
-        "Cloud application development",
+        "Cloud Architecture & Infrastructure as Code",
+        "DevOps & CI/CD Pipelines",
+        "DevSecOps & Cloud Security",
+        "Cloud Networking and Virtualization",
+        "Remote and Real-Time Data Applications",
+        "Cloud Storage and Data Management",
+        "Compliance & Governance",
+      ],
+    },
+    {
+      title: "Computer Programming – Diploma",
+      school: "Algonquin College",
+      location: "Ottawa, Canada",
+      period: "September 2022 – April 2024",
+      highlights: [
+        "GPA: 3.6 / 4.00",
+        "Completed co-op placement at Canada Revenue Agency",
+        "Built full-stack and data-focused projects across multiple semesters",
+      ],
+      coursework: [
+        "Object-Oriented Programming",
+        "Databases & Data Structures",
+        "Web Development",
+        "Software Testing",
       ],
     },
   ],
 
   projects: [
+    {
+      title: "CarClinch CI/CD Pipeline",
+      description:
+        "Designed and implemented a full CI/CD pipeline for the CarClinch AI image processing API. The pipeline automatically builds and tests the Dockerized Python application on every push, runs a Trivy container security scan, and publishes the image to a container registry — enabling fast, reliable, and secure deployments.",
+      tags: [
+        "GitHub Actions",
+        "Docker",
+        "CI/CD",
+        "Trivy",
+        "Python",
+        "DevSecOps",
+      ],
+      image: "", // add a screenshot of your GitHub Actions workflow run e.g. "/images/carclinch-cicd.png"
+      link: "",
+      github: "https://github.com/Patel-Creates/carclinch-bg-removal-api",
+    },
+    {
+      title: "Monitoring & Observability Stack",
+      description:
+        "Built a full observability stack using Prometheus, Grafana, and Loki to monitor the CarClinch API in both local and cloud environments. Configured custom Grafana dashboards tracking API request rates, response times, error rates, and container resource usage — deployed locally via Docker Compose and on Azure.",
+      tags: [
+        "Prometheus",
+        "Grafana",
+        "Loki",
+        "Docker Compose",
+        "Azure",
+        "Observability",
+      ],
+      image: "", // add a screenshot of your Grafana dashboard e.g. "/images/monitoring-dashboard.png"
+      link: "",
+      github: "",
+    },
     {
       title: "Rideau Canal Skating Conditions System",
       description:
@@ -143,7 +194,7 @@ const personalInfo: PersonalInfo = {
         "Next.js",
       ],
       image: "/images/Rideau-Canal-Dashboard.png",
-      link: "", // add your deployed URL here once live
+      link: "",
       github: "https://github.com/Patel-Creates/rideau-canal-dashboard",
     },
     {
@@ -151,7 +202,7 @@ const personalInfo: PersonalInfo = {
       description:
         "An AI-powered Python REST API that automatically removes and replaces backgrounds in car images. Designed for automotive listings to generate clean, professional product shots without manual editing.",
       tags: ["Python", "REST API", "AI", "Image Processing"],
-      image: "", // add a screenshot in /public/images/ e.g. "/images/carclinch.png"
+      image: "", // add a screenshot e.g. "/images/carclinch.png"
       link: "",
       github: "https://github.com/Patel-Creates/carclinch-bg-removal-api",
     },
@@ -167,7 +218,7 @@ const personalInfo: PersonalInfo = {
         "LLM",
         "Azure App Services",
       ],
-      image: "", // add a screenshot in /public/images/ e.g. "/images/chatbot.png"
+      image: "", // add a screenshot e.g. "/images/azure-rag-chatbot.png"
       link: "",
       github: "https://github.com/Patel-Creates/azure-search-openai-Chatbot",
     },
