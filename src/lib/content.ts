@@ -83,6 +83,18 @@ const personalInfo: PersonalInfo = {
 
   experiences: [
     {
+  title: "Developer (Co-op)",
+  company: "Canada Revenue Agency",
+  location: "Ottawa, Canada",
+  period: "Sep 2023 – Oct 2024",
+  description: [
+    "Developed and tested Angular-based enterprise web applications and government web forms, including GST/HST rebate forms.",
+    "Supported application deployments across DEV, TEST, pre-production, and production environments following release management procedures.",
+    "Managed development and testing tasks in Jira, tracking defects and coordinating Agile Scrum sprint workflows across cross-functional teams.",
+    "Shadowed the release manager to observe environment promotion, release coordination, and post-release validation activities.",
+  ],
+},
+    {
       title: "Cloud Network Analyst Intern",
       company: "PSAC – Public Service Alliance of Canada",
       location: "Ottawa, Canada",
@@ -130,7 +142,7 @@ const personalInfo: PersonalInfo = {
         "REST API",
         "Next.js",
       ],
-      image: "", // add a screenshot in /public/images/ e.g. "/images/rideau.png"
+      image: "/images/Rideau-Canal-Dashboard.png",
       link: "", // add your deployed URL here once live
       github: "https://github.com/Patel-Creates/rideau-canal-dashboard",
     },
