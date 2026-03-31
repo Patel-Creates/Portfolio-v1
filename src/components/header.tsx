@@ -45,7 +45,7 @@ const Header = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="font-bold text-xl"
+          className="font-bold text-xl text-primary"
         >
           <Link href="/">{personalInfo.name}</Link>
         </motion.div>
@@ -60,7 +60,7 @@ const Header = () => {
             >
               <Link
                 href={item.href}
-                className="text-foreground/80 hover:text-foreground transition-colors"
+                className="text-foreground/80 hover:text-primary transition-colors"
               >
                 {item.name}
               </Link>
@@ -78,7 +78,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <Button asChild>
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <a
                 href="/Dharti-Patel-Resume.pdf"
                 target="_blank"
@@ -120,13 +120,13 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block text-foreground/80 hover:text-foreground transition-colors py-2"
+                className="block text-foreground/80 hover:text-primary transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="w-full">
+            <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 hover:text-primary">
               <a
                 href="/Dharti-Patel-Resume.pdf"
                 target="_blank"

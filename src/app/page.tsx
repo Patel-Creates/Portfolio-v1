@@ -27,8 +27,9 @@ export default function Home() {
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <Button
               asChild
+              variant="outline"
               size="lg"
-              className="px-8 py-6 text-base font-medium"
+              className="px-8 py-6 text-base font-medium border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
               <a href="#projects">View My Work</a>
             </Button>
@@ -36,7 +37,7 @@ export default function Home() {
               asChild
               variant="outline"
               size="lg"
-              className="px-8 py-6 text-base font-medium"
+              className="px-8 py-6 text-base font-medium border-primary text-primary hover:bg-primary/10 hover:text-primary"
             >
               <a href="#contact">Contact Me</a>
             </Button>

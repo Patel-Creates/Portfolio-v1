@@ -51,9 +51,9 @@ const personalInfo: PersonalInfo = {
   email: "Dharti236@gmail.com",
   location: "Ottawa, Canada",
   quote: "Build it. Break it. Fix it. Ship it.",
-  avatar: "/images/avatar.jpg", // rename your LinkedIn photo to avatar.jpg and drop it in /public/images/
+  avatar: "/images/Gradpic.JPG",
   about:
-    "Hi, I'm Dharti Patel, a Cloud & DevOps student at Algonquin College in Ottawa. I'm passionate about building cloud-native solutions, automating infrastructure, and working with Azure. I'm incoming as a Cloud Network Analyst Intern at PSAC and love working on real-world projects that combine IoT, AI, and cloud technology. Always learning, always building.",
+    "Hi, I'm Dharti Patel. I took the long way into tech, I used to be a chef and worked in new home sales before I found my way into programming, and honestly those experiences made me a better problem solver than any course did. Now I'm a Cloud & DevOps student at Algonquin College, building cloud-native solutions and automating infrastructure. I like figuring out how all the pieces connect: cloud, automation, security, the whole thing. I'm joining PSAC as a Cloud Network Analyst Intern this summer. When I'm not in the terminal, I'm probably in the kitchen or chasing sunsets.",
   message:
     "Feel free to reach out if you're looking to collaborate, have a question, or just want to connect!",
   socials: {
@@ -149,7 +149,7 @@ const personalInfo: PersonalInfo = {
 
   projects: [
     {
-      title: "CarClinch CI/CD Pipeline",
+      title: "Automated Deploy Pipeline with Security Scanning",
       description:
         "Designed and implemented a full CI/CD pipeline for the CarClinch AI image processing API. The pipeline automatically builds and tests the Dockerized Python application on every push, runs a Trivy container security scan, and publishes the image to a container registry — enabling fast, reliable, and secure deployments.",
       tags: [
@@ -165,7 +165,7 @@ const personalInfo: PersonalInfo = {
       github: "https://github.com/Patel-Creates/carclinch-bg-removal-api",
     },
     {
-      title: "Monitoring & Observability Stack",
+      title: "Real-Time API Monitoring Dashboard",
       description:
         "Built a full observability stack using Prometheus, Grafana, and Loki to monitor the CarClinch API in both local and cloud environments. Configured custom Grafana dashboards tracking API request rates, response times, error rates, and container resource usage — deployed locally via Docker Compose and on Azure.",
       tags: [

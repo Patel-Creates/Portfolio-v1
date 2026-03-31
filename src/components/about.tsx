@@ -57,6 +57,7 @@ const About = () => {
                   <AvatarImage
                     src={personalInfo.avatar}
                     alt={personalInfo.name}
+                    style={{ objectFit: "cover", objectPosition: "top center" }}
                   />
                   <AvatarFallback className="text-4xl">
                     {personalInfo.name.charAt(0)}

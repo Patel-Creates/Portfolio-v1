@@ -152,7 +152,7 @@ const Projects = () => {
               variants={fadeIn}
               transition={{ delay: index * 0.15 }}
             >
-              <Card className="group relative flex h-full flex-col overflow-hidden border-none bg-secondary/10 backdrop-blur-md shadow-md transition-all duration-300 hover:scale-[1.03] hover:shadow-xl">
+              <Card className="group relative flex h-full flex-col overflow-hidden border border-transparent bg-secondary/10 backdrop-blur-md shadow-md transition-all duration-300 hover:scale-[1.03] hover:shadow-xl hover:border-primary/50">
                 <div className="relative h-52 overflow-hidden bg-secondary/10">
                   {project.image ? (
                     <Image
@@ -162,8 +162,21 @@ const Projects = () => {
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                   ) : (
-                    <div className="flex h-full items-center justify-center">
-                      <FolderGit2 className="h-16 w-16 text-primary/40" />
+                    <div className="flex h-full flex-col bg-zinc-950 font-mono text-xs">
+                      <div className="flex items-center gap-1.5 border-b border-zinc-800 px-3 py-2">
+                        <span className="h-2.5 w-2.5 rounded-full bg-red-500/70" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/70" />
+                        <span className="h-2.5 w-2.5 rounded-full bg-green-500/70" />
+                        <span className="ml-2 text-zinc-500">dashboard</span>
+                      </div>
+                      <div className="flex flex-1 flex-col justify-center gap-1.5 px-4 py-3 text-[11px]">
+                        <span className="text-green-400/80">● api_requests <span className="text-zinc-400">1,204 req/min</span></span>
+                        <span className="text-green-400/80">● response_p99 <span className="text-zinc-400">142ms</span></span>
+                        <span className="text-yellow-400/70">⚠ error_rate   <span className="text-zinc-400">0.3%</span></span>
+                        <span className="text-green-400/80">● cpu_usage    <span className="text-zinc-400">38%</span></span>
+                        <span className="text-green-400/80">● mem_usage    <span className="text-zinc-400">512 MiB</span></span>
+                        <span className="mt-1 text-primary/60">▋</span>
+                      </div>
                     </div>
                   )}
                 </div>
